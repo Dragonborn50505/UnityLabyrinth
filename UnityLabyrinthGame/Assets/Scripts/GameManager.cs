@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
         if (_currentLives <= 0)
         {
             _endScreen.text = _loseConditionText;
-            _endGameScreen.SetActive(true);
+            _endGameScreen?.SetActive(true);
         }
     }
 
@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
     {
         //TODO: Add a bool to see if the player has won the game;
         _endScreen.text = _winConditionText;
-        _endGameScreen.SetActive(true);
+        _endGameScreen?.SetActive(true);
     }
 
     public void RestartLevel()
