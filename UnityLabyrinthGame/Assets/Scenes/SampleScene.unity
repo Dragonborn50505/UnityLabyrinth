@@ -3317,8 +3317,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ball: {fileID: 0}
-  _scoreText: {fileID: 0}
-  _endScreen: {fileID: 0}
+  _scoreText: {fileID: 1489944616}
+  _endScreen: {fileID: 2011721020}
   _endGameScreen: {fileID: 0}
   _winConditionText: You Win!
   _loseConditionText: You Lose!
