@@ -3316,7 +3316,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02f1906bd81c95f4f95e0acf79b3056b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ball: {fileID: 0}
+  _ball: {fileID: 1495504201}
+  _maze: {fileID: 1843985794}
+  _ballOriginalPos: {x: 0, y: 0, z: 0}
+  _mazeOriginalRotation: {x: 0, y: 0, z: 0}
   _scoreText: {fileID: 1489944616}
   _endScreen: {fileID: 2011721020}
   _endGameScreen: {fileID: 1089187593}
