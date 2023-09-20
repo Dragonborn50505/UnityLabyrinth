@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    private PointScoring _pointScoring;
+
     public int CurrentScore { get; private set; }
     private int _currentLives = 3;
 
@@ -17,6 +19,11 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private string _winConditionText = "You Win!";
     [SerializeField] private string _loseConditionText = "You Lose!";
+
+    private void Awake()
+    {
+        _pointScoring = GetComponent<PointScoring>();
+    }
 
     void Start()
     {
