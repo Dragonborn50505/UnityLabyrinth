@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4463c188bf3adb34482b02cfade4d96d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: 3.55
+  sensitivity: 50.1
   mouseMovement:
     m_Name: Mouse Movement
     m_Type: 0
@@ -171,6 +171,23 @@ MonoBehaviour:
       m_Processors: 
       m_Groups: 
       m_Action: Mouse Movement
+      m_Flags: 0
+    m_Flags: 0
+  enableRotation:
+    m_Name: Enable Rotation
+    m_Type: 1
+    m_ExpectedControlType: Button
+    m_Id: 96928b1a-114c-4dd5-8694-fb561ebf9266
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 84564a48-fa0e-4f19-8a09-6e20357f1be6
+      m_Path: <Mouse>/leftButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Enable Rotation
       m_Flags: 0
     m_Flags: 0
 --- !u!65 &950362698
@@ -438,13 +455,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1924399173}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 4.37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
