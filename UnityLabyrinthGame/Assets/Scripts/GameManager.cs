@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     private int _currentLives = 3;
 
     [SerializeField] private Transform _ball;
+    [SerializeField] private Transform _maze;
+    [SerializeField] Vector3 _ballOriginalPos;
+    [SerializeField] Vector3 _mazeOriginalRotation;
 
     [SerializeField] private TextMeshProUGUI _scoreText;
     [SerializeField] private TextMeshProUGUI _endScreen;
@@ -55,6 +58,12 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
         //TODO: Jovan - Scene Loading could go smoother/better - need time to figure out which way I can do it. 
+    }
+
+    public void ResetPosition() 
+    {
+        _maze.rotation = Quaternion.Euler(_mazeOriginalRotation);
+        _ball.position = _ballOriginalPos;
     }
 
     public void QuitGame()
