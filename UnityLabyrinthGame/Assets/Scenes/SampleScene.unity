@@ -559,7 +559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isVictoryHole: 0
-  holeScore: 0
+  holeScore: 4
 --- !u!1 &534217434
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,7 +993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isVictoryHole: 0
-  holeScore: 0
+  holeScore: 5
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,7 +1345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isVictoryHole: 0
-  holeScore: 0
+  holeScore: 1
 --- !u!1 &730509234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,7 +1467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isVictoryHole: 0
-  holeScore: 0
+  holeScore: 3
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1681,7 +1681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isVictoryHole: 0
-  holeScore: 0
+  holeScore: 6
 --- !u!1 &1002595370
 GameObject:
   m_ObjectHideFlags: 0
@@ -2678,7 +2678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isVictoryHole: 0
-  holeScore: 0
+  holeScore: 2
 --- !u!1 &1582730777
 GameObject:
   m_ObjectHideFlags: 0
