@@ -155,6 +155,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4463c188bf3adb34482b02cfade4d96d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sensitivity: 3.55
+  mouseMovement:
+    m_Name: Mouse Movement
+    m_Type: 0
+    m_ExpectedControlType: Vector2
+    m_Id: 914bcfb1-3731-4c35-aa9c-e7de31859ea6
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 1d1bf84c-147a-445e-893b-f4d344121880
+      m_Path: <Mouse>/delta
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Mouse Movement
+      m_Flags: 0
+    m_Flags: 0
 --- !u!65 &950362698
 BoxCollider:
   m_ObjectHideFlags: 0
