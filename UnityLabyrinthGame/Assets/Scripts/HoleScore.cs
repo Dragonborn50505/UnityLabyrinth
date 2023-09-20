@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class HoleScore : MonoBehaviour
 {
@@ -14,6 +16,11 @@ public class HoleScore : MonoBehaviour
     {
         gameManager = FindObjectOfType<GameManager>();
         pointScoring = FindObjectOfType<PointScoring>();
+    }
+
+    private void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private void OnTriggerEnter(Collider other)
