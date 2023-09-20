@@ -12,34 +12,47 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform _ball;
 
     [SerializeField] private TextMeshProUGUI _scoreText;
+    [SerializeField] private TextMeshProUGUI _endScreen;
     [SerializeField] private GameObject _endGameScreen;
+
+    [SerializeField] private string _winConditionText = "You Win!";
+    [SerializeField] private string _loseConditionText = "You Lose!";
 
     void Start()
     {
-            
+        _endGameScreen.SetActive(false);
     }
 
     void Update()
     {
-        
+        LoseState();
+        WinState();
     }
 
-    private void LoseState() 
+    private void LoseState()
     {
-        if(_currentLives <= 0) 
+        if (_currentLives <= 0)
         {
-
+            _endScreen.text = _loseConditionText;
+            _endGameScreen.SetActive(true);
         }
     }
 
-    private void LoseLife() 
+    private void WinState()
     {
-
+        //TODO: Add a bool to see if the player has won the game;
+        _endScreen.text = _winConditionText;
+        _endGameScreen.SetActive(true);
     }
 
-    public void RestartLevel() 
+    private void LoseLife()
     {
-        SceneManager.LoadScene("SampleScene"); 
+        _currentLives--;
+    }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene("SampleScene");
         //TODO: Jovan - Scene Loading could go smoother/better - need time to figure out which way I can do it. 
     }
 }
