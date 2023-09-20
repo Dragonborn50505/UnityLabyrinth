@@ -56,4 +56,9 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
         //TODO: Jovan - Scene Loading could go smoother/better - need time to figure out which way I can do it. 
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
