@@ -31,8 +31,8 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        LoseState();
-        WinState();
+       /* LoseState();
+        WinState();*/
     }
 
     private void LoseState()
@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
     {
         //TODO: Add a bool to see if the player has won the game;
         _endScreen.text = _winConditionText;
-        _endGameScreen?.SetActive(true);
+        //_endGameScreen?.SetActive(true);
     }
 
     public void RestartLevel()

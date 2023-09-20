@@ -3291,7 +3291,7 @@ MonoBehaviour:
   _ball: {fileID: 0}
   _scoreText: {fileID: 1489944616}
   _endScreen: {fileID: 2011721020}
-  _endGameScreen: {fileID: 0}
+  _endGameScreen: {fileID: 1089187593}
   _winConditionText: You Win!
   _loseConditionText: You Lose!
 --- !u!4 &1962536352
