@@ -22,7 +22,7 @@ public class MazeControl : MonoBehaviour
     {
         if (enableRotation.IsPressed())
         {
-            Vector2 mouseDelta = mouseMovement.ReadValue<Vector2>();
+            Vector2 mouseDelta = mouseMovement.ReadValue<Vector2>().normalized;
             transform.rotation = Quaternion.Euler(
                 transform.eulerAngles.x + mouseDelta.y * sensitivity * Time.deltaTime,
                 0,
