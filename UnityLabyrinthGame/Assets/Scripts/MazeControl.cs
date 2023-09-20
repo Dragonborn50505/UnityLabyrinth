@@ -24,9 +24,9 @@ public class MazeControl : MonoBehaviour
         {
             Vector2 mouseDelta = mouseMovement.ReadValue<Vector2>().normalized;
             transform.rotation = Quaternion.Euler(
-                transform.eulerAngles.x + mouseDelta.y * sensitivity * Time.deltaTime,
+                transform.eulerAngles.x + -mouseDelta.y * sensitivity * Time.deltaTime,
                 0,
-                transform.eulerAngles.z + -mouseDelta.x * sensitivity * Time.deltaTime
+                transform.eulerAngles.z + mouseDelta.x * sensitivity * Time.deltaTime
             );
         }
     }
