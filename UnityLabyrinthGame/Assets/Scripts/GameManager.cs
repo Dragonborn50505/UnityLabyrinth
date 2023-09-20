@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
 {
     private PointScoring _pointScoring;
 
-    public int CurrentScore { get; private set; }
     private int _currentLives = 3;
 
     [SerializeField] private Transform _ball;
@@ -50,11 +49,6 @@ public class GameManager : MonoBehaviour
         //TODO: Add a bool to see if the player has won the game;
         _endScreen.text = _winConditionText;
         _endGameScreen.SetActive(true);
-    }
-
-    private void LoseLife()
-    {
-        _currentLives--;
     }
 
     public void RestartLevel()
